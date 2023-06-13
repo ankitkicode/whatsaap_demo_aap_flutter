@@ -1,3 +1,5 @@
+// ignore_for_file: prefer_const_literals_to_create_immutables, prefer_const_constructors, sort_child_properties_last
+
 import 'package:flutter/material.dart';
 import 'package:whatsaap_demo/Chatscreen.dart';
 import 'package:whatsaap_demo/calls.dart';
@@ -54,6 +56,12 @@ bottom: TabBar(
           onPressed: null,
         ),
       ),
+    /// This code is creating a `TabBarView` widget with a `controller` property set to `nameControler`
+    /// which is a `TabController` object. The `TabBarView` widget contains a list of children widgets
+    /// that correspond to each tab in the `TabBar` widget. The first child is a `Text` widget with the
+    /// text "Groups", the second child is a `chatScreen` widget, the third child is a `statusScreen`
+    /// widget, and the fourth child is a `callsScreen` widget. When a user taps on a tab in the
+    /// `TabBar`, the corresponding child widget is displayed in the `TabBarView`.
       body: TabBarView(
         controller: nameControler,
         children: [
